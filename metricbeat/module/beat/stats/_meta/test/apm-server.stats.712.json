@@ -1,0 +1,421 @@
+{
+    "apm-server": {
+        "acm": {
+            "request": {
+                "count": 0
+            },
+            "response": {
+                "count": 0,
+                "errors": {
+                    "closed": 0,
+                    "count": 0,
+                    "decode": 0,
+                    "forbidden": 0,
+                    "internal": 0,
+                    "invalidquery": 0,
+                    "method": 0,
+                    "notfound": 0,
+                    "queue": 0,
+                    "ratelimit": 0,
+                    "timeout": 0,
+                    "toolarge": 0,
+                    "unauthorized": 0,
+                    "unavailable": 0,
+                    "validate": 0
+                },
+                "valid": {
+                    "accepted": 0,
+                    "count": 0,
+                    "notmodified": 0,
+                    "ok": 0
+                }
+            },
+            "unset": 0
+        },
+        "agentcfg": {
+            "elasticsearch": {
+                "cache.entries.count": 0,
+                "cache.refresh.failures": 0,
+                "cache.refresh.successes": 6,
+                "fetch.es": 0,
+                "fetch.fallback": 0,
+                "fetch.invalid": 0,
+                "fetch.unavailable": 0
+            }
+        },
+        "jaeger": {
+            "grpc": {
+                "collect": {
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                },
+                "sampling": {
+                    "event": {
+                        "received": {
+                            "count": 0
+                        }
+                    },
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                }
+            }
+        },
+        "otlp": {
+            "grpc": {
+                "logs": {
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                },
+                "metrics": {
+                    "consumer": {
+                        "unsupported_dropped": 0
+                    },
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                },
+                "traces": {
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                }
+            },
+            "http": {
+                "logs": {
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                },
+                "metrics": {
+                    "consumer": {
+                        "unsupported_dropped": 0
+                    },
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                },
+                "traces": {
+                    "request": {
+                        "count": 0
+                    },
+                    "response": {
+                        "count": 0,
+                        "errors": {
+                            "count": 0,
+                            "ratelimit": 0,
+                            "timeout": 0,
+                            "unauthorized": 0
+                        },
+                        "valid": {
+                            "count": 0
+                        }
+                    }
+                }
+            }
+        },
+        "processor": {
+            "error": {
+                "transformations": 782
+            },
+            "metric": {
+                "transformations": 8295
+            },
+            "span": {
+                "transformations": 10234
+            },
+            "stream": {
+                "accepted": 41772,
+                "errors": {
+                    "invalid": 0,
+                    "toolarge": 0
+                }
+            },
+            "transaction": {
+                "transformations": 3004
+            }
+        },
+        "root": {
+            "request": {
+                "count": 1
+            },
+            "response": {
+                "count": 1,
+                "errors": {
+                    "closed": 0,
+                    "count": 1,
+                    "decode": 0,
+                    "forbidden": 0,
+                    "internal": 0,
+                    "invalidquery": 0,
+                    "method": 0,
+                    "notfound": 0,
+                    "queue": 0,
+                    "ratelimit": 0,
+                    "timeout": 1,
+                    "toolarge": 0,
+                    "unauthorized": 0,
+                    "unavailable": 0,
+                    "validate": 0
+                },
+                "valid": {
+                    "accepted": 0,
+                    "count": 0,
+                    "notmodified": 0,
+                    "ok": 0
+                }
+            },
+            "unset": 0
+        },
+        "sampling": {
+            "tail": {
+                "dynamic_service_groups": 4,
+                "events": {
+                    "dropped": 2149,
+                    "failed_writes": 0,
+                    "head_unsampled": 0,
+                    "processed": 34538,
+                    "sampled": 13238,
+                    "stored": 32389
+                },
+                "storage": {
+                    "lsm_size": 525060325,
+                    "value_log_size": 12058435
+                }
+            },
+            "transactions_dropped": 0
+        },
+        "server": {
+            "request": {
+                "count": 605
+            },
+            "response": {
+                "count": 605,
+                "errors": {
+                    "closed": 0,
+                    "count": 0,
+                    "decode": 0,
+                    "forbidden": 0,
+                    "internal": 0,
+                    "invalidquery": 0,
+                    "method": 0,
+                    "notfound": 0,
+                    "queue": 0,
+                    "ratelimit": 0,
+                    "timeout": 0,
+                    "toolarge": 0,
+                    "unauthorized": 0,
+                    "unavailable": 0,
+                    "validate": 0
+                },
+                "valid": {
+                    "accepted": 605,
+                    "count": 605,
+                    "notmodified": 0,
+                    "ok": 0
+                }
+            },
+            "unset": 0
+        }
+    },
+    "beat": {
+        "cgroup": {
+            "cpu": {
+                "id": "session-c2.scope",
+                "stats": {
+                    "periods": 0,
+                    "throttled": {
+                        "ns": 0,
+                        "periods": 0
+                    }
+                }
+            },
+            "memory": {
+                "id": "session-c2.scope",
+                "mem": {
+                    "usage": {
+                        "bytes": 30244999168
+                    }
+                }
+            }
+        },
+        "cpu": {
+            "system": {
+                "ticks": 2360,
+                "time": {
+                    "ms": 2360
+                }
+            },
+            "total": {
+                "ticks": 12850,
+                "time": {
+                    "ms": 12850
+                },
+                "value": 12850
+            },
+            "user": {
+                "ticks": 10490,
+                "time": {
+                    "ms": 10490
+                }
+            }
+        },
+        "handles": {
+            "limit": {
+                "hard": 1048576,
+                "soft": 1048576
+            },
+            "open": 56
+        },
+        "info": {
+            "ephemeral_id": "d57303bc-7918-4832-a917-e8f2467ca5fd",
+            "name": "apm-server",
+            "uptime": {
+                "ms": 179556
+            },
+            "version": "8.18.0"
+        },
+        "memstats": {
+            "gc_next": 178933328,
+            "memory_alloc": 129688560,
+            "memory_sys": 226933048,
+            "memory_total": 1972011464,
+            "rss": 762793984
+        },
+        "runtime": {
+            "goroutines": 33
+        }
+    },
+    "libbeat": {
+        "output": {
+            "events": {
+                "acked": 18441,
+                "active": 3874,
+                "batches": 7,
+                "failed": 0,
+                "toomany": 0,
+                "total": 22315
+            },
+            "type": "elasticsearch",
+            "write": {
+                "bytes": 3220280
+            }
+        },
+        "pipeline": {
+            "events": {
+                "total": 22315
+            }
+        }
+    },
+    "output": {
+        "elasticsearch": {
+            "bulk_requests": {
+                "available": 37,
+                "completed": 7
+            },
+            "indexers": {
+                "active": 1,
+                "created": 0,
+                "destroyed": 0
+            }
+        }
+    },
+    "system": {
+        "cpu": {
+            "cores": 16
+        },
+        "load": {
+            "1": 14.04,
+            "15": 5.22,
+            "5": 8.9,
+            "norm": {
+                "1": 0.8775,
+                "15": 0.3263,
+                "5": 0.5563
+            }
+        }
+    }
+}

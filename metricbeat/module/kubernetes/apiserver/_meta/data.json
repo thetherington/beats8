@@ -1,0 +1,35 @@
+{
+    "@timestamp": "2019-03-01T08:05:34.853Z",
+    "event": {
+        "dataset": "kubernetes.apiserver",
+        "duration": 115000,
+        "module": "kubernetes"
+    },
+    "kubernetes": {
+        "apiserver": {
+            "major": {
+                "version": "1"
+            },
+            "minor": {
+                "version": "21"
+            },
+            "request": {
+                "code": "0",
+                "component": "apiserver",
+                "count": 14,
+                "resource": "endpoints",
+                "scope": "cluster",
+                "verb": "WATCH",
+                "version": "v1"
+            }
+        }
+    },
+    "metricset": {
+        "name": "apiserver",
+        "period": 10000
+    },
+    "service": {
+        "address": "127.0.0.1:55555",
+        "type": "kubernetes"
+    }
+}

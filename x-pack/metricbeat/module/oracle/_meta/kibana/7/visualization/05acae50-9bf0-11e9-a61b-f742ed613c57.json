@@ -1,0 +1,91 @@
+{
+    "attributes": {
+        "description": "",
+        "kibanaSavedObjectMeta": {
+            "searchSourceJSON": {}
+        },
+        "title": "Tablespace Max Total Size [Metricbeat Oracle]",
+        "uiStateJSON": {},
+        "version": 1,
+        "visState": {
+            "aggs": [],
+            "params": {
+                "axis_formatter": "number",
+                "axis_position": "left",
+                "axis_scale": "normal",
+                "id": "61ca57f0-469d-11e7-af02-69e470af7417",
+                "index_pattern": "metricbeat-*",
+                "interval": "auto",
+                "series": [
+                    {
+                        "axis_position": "right",
+                        "chart_type": "line",
+                        "color": "rgba(115,216,255,1)",
+                        "fill": 0.5,
+                        "formatter": "bytes",
+                        "id": "61ca57f1-469d-11e7-af02-69e470af7417",
+                        "label": "Tablespace max total size",
+                        "line_width": 1,
+                        "metrics": [
+                            {
+                                "agg_with": "avg",
+                                "field": "oracle.tablespace.space.used.bytes",
+                                "id": "61ca57f2-469d-11e7-af02-69e470af7417",
+                                "type": "max"
+                            },
+                            {
+                                "agg_with": "avg",
+                                "colors": [
+                                    "#68BC00"
+                                ],
+                                "field": "oracle.tablespace.space.free.bytes",
+                                "id": "e04e8f40-24cd-4066-b12c-da0db0ff73d4",
+                                "type": "max"
+                            },
+                            {
+                                "id": "2cf57800-8b54-41fa-a877-159b49699a50",
+                                "script": "params.used_bytes + params.free_bytes",
+                                "type": "math",
+                                "variables": [
+                                    {
+                                        "field": "61ca57f2-469d-11e7-af02-69e470af7417",
+                                        "id": "631a44d5-d18a-4743-bea0-6f61930fd65f",
+                                        "name": "used_bytes"
+                                    },
+                                    {
+                                        "field": "e04e8f40-24cd-4066-b12c-da0db0ff73d4",
+                                        "id": "c255d24c-3a29-4879-b999-77af43d97c6b",
+                                        "name": "free_bytes"
+                                    }
+                                ]
+                            }
+                        ],
+                        "point_size": 1,
+                        "separate_axis": 0,
+                        "split_color_mode": "gradient",
+                        "split_mode": "terms",
+                        "stacked": "stacked",
+                        "terms_field": "oracle.tablespace.name",
+                        "terms_order_by": "61ca57f2-469d-11e7-af02-69e470af7417"
+                    }
+                ],
+                "show_grid": 1,
+                "show_legend": 1,
+                "time_field": "@timestamp",
+                "type": "timeseries",
+                "use_kibana_indexes": false
+            },
+            "title": "Tablespace Max Total Size [Metricbeat Oracle]",
+            "type": "metrics"
+        }
+    },
+    "coreMigrationVersion": "8.0.0",
+    "id": "05acae50-9bf0-11e9-a61b-f742ed613c57",
+    "migrationVersion": {
+        "visualization": "7.14.0"
+    },
+    "references": [],
+    "type": "visualization",
+    "updated_at": "2021-08-04T16:30:20.355Z",
+    "version": "WzMyNzgsMV0="
+}

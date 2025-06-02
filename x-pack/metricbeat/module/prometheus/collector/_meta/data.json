@@ -1,0 +1,26 @@
+{
+    "@timestamp": "2019-03-01T08:05:34.853Z",
+    "event": {
+        "dataset": "prometheus.collector",
+        "duration": 115000,
+        "module": "prometheus"
+    },
+    "metrics_count": 1,
+    "metricset": {
+        "name": "collector",
+        "period": 10000
+    },
+    "prometheus": {
+        "labels": {
+            "device": "br-0cb306323b90",
+            "job": "prometheus"
+        },
+        "node_network_carrier": {
+            "value": 0
+        }
+    },
+    "service": {
+        "address": "127.0.0.1:55555",
+        "type": "prometheus"
+    }
+}

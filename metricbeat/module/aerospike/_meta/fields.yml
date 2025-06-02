@@ -1,0 +1,11 @@
+- key: aerospike
+  title: "Aerospike"
+  description: >
+    Aerospike module
+  release: ga
+  settings: ["ssl"]
+  fields:
+    - name: aerospike
+      type: group
+      description: >
+      fields:
