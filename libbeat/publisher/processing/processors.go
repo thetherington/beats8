@@ -212,7 +212,8 @@ func debugPrintProcessor(info beat.Info, log *logp.Logger) *processorFn {
 			return event, nil
 		}
 
-		log.Debugw(fmt.Sprintf("Publish event: %s", b), logp.TypeKey, logp.EventType)
+		log.Debugw(fmt.Sprintf("Publish event: %s", b))
+		// log.Debugw(fmt.Sprintf("Publish event####: %s", b), logp.TypeKey, logp.EventType)
 		return event, nil
 	})
 }
